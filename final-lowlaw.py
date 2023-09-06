@@ -9,6 +9,13 @@ import json
 import datetime
 from elastic_app_search import Client
 
+# Elasticsearch 클라이언트 설정
+es_cloud_id = "lowlaw:YXAtbm9ydGhlYXN0LTIuYXdzLmVsYXN0aWMtY2xvdWQuY29tOjQ0MyQ2YzNmMjA4MmNiMzk0M2YxYTBiZWI0ZDY2M2JmM2VlZCRjZTA2NGZhNjFiMmI0N2Y0ODgzMjY0Y2FlMzVlZDgxZQ=="
+es_username = "elastic"
+es_pw = "LWkW2eILoZYZylsDDThLaCKY"
+
+es = Elasticsearch(cloud_id=es_cloud_id, basic_auth=(es_username, es_pw))
+    
 def load_image(img_file): # st 이미지 불러오기 함수
     img = Image.open(img_file)
     return img
