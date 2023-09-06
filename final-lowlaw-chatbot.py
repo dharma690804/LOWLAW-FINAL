@@ -153,7 +153,7 @@ def button_prec() :
 
 model = cached_model() # sentenceBERT 모델
 
-logo_file = '../image/lowlaw.png' # 로고 이미지 파일경로
+logo_file = './image/lowlaw.png' # 로고 이미지 파일경로
 logo_img = load_image(logo_file) # 로고 이미지 가져옴
 
 # 챗봇 sidebar
