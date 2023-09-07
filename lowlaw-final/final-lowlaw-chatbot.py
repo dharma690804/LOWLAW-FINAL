@@ -14,7 +14,9 @@ es_cloud_id = "lowlaw:YXAtbm9ydGhlYXN0LTIuYXdzLmVsYXN0aWMtY2xvdWQuY29tOjQ0MyQ2Yz
 es_username = "elastic"
 es_pw = "LWkW2eILoZYZylsDDThLaCKY"
 
-es = Elasticsearch(cloud_id=es_cloud_id, basic_auth=(es_username, es_pw))
+timeout_seconds = 60
+
+es = Elasticsearch(cloud_id=es_cloud_id, basic_auth=(es_username, es_pw), timeout=timeout_seconds)
 
 # Appsearch 클라이언트 설정
 client = Client(
