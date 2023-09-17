@@ -4,5 +4,4 @@ Pillow
 streamlit_option_menu
 sentence_transformers
 elasticsearch
-final-lowlaw-chatbot.py
-final-search.py
+
